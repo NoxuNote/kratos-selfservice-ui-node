@@ -56,9 +56,9 @@ form button:hover {
 
 form label input {
     border-radius: 0.166em;
-    background-color: var(--base-black);
+    background-color: var(--base-light);
     border-width: 0;
-    color: var(--base-white);
+    color: var(--base-black);
     padding: 0.875em 0.666em;
     font-size: inherit;
     line-height: 168%;
