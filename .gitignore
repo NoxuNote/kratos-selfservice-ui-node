@@ -98,6 +98,3 @@ jspm_packages/
 
 lib
 .idea
-
-#VLO
-package-lock.json
