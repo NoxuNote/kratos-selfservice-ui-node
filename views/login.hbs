@@ -1,6 +1,6 @@
 <div class="auth">
     <div class="container" id="login">
-        <img src="https://avatars.githubusercontent.com/u/69384459?s=280&v=4"  width="40%" height="40%" >
+        {{> icon_logo}}
         <h2 class="subheading">Bienvenue sur Noxunote !</h2>
 
         {{> messages messages=messages className="global"}}
@@ -13,8 +13,8 @@
 
         <div class="alternative-actions">
             <!-- <a href="auth/registration">Recover password</a> -->
-            <a href="{{pathPrefix}}auth/registration">Créer un nouveau compte</a>
-            <a href="{{pathPrefix}}recovery">Réinitialiser le mot de passe</a>
+            <a href="{{pathPrefix}}auth/registration" style="text-align: center">Créer un nouveau compte</a>
+            <a href="{{pathPrefix}}recovery" style="text-align: center">Réinitialiser le mot de passe</a>
         </div>
     </div>
 </div>

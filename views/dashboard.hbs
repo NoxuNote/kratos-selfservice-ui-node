@@ -1,12 +1,14 @@
 <div class="content">
-    {{> header}}
     <div class="container">
-        <h2 class="greeting">Bon retour parmis nous 
-            <span class="user-identifier"> {{session.identity.traits.first}}</span>
+        <h2 class="greeting" style="text-align: center">Connexion réussie
+            <img src="https://img.icons8.com/color/50/000000/checked-checkbox.png"/>
         </h2>
-        <p>
-            Tu peux dès à présent retrouver tes notes.
-        </p>
+        <h3 style="text-align: center">
+            Bonjour <span class="user-identifier"> {{session.identity.traits.first}}</span> !
+        </h3>
+        <h4 style="text-align: center">
+            Tu peux dès à présent accéder à tes notes.
+        </h4>
         
     </div>
 </div>

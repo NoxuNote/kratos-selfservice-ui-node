@@ -1,6 +1,6 @@
 .auth {
     min-height: 100vh;
-    color: var(--primary-light);
+    color: var(--primary-dark);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +9,7 @@
 .auth .subheading {
     margin-bottom: 1.5rem;
     text-align: center;
-    color: var(--base-text);
+    color: var(--base-dark);
 }
 
 .auth a {
@@ -18,7 +18,7 @@
 }
 
 .auth a:hover {
-    color: var(--base-white);
+    color: var(--base-black);
 }
 
 .auth .alternative-actions {

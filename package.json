@@ -30,7 +30,6 @@
     "@types/handlebars-helpers": "^0.5.2",
     "@types/jwt-decode": "^2.2.1",
     "@types/morgan": "^1.9.1",
-    "@types/node": "^12.12.51",
     "@types/node-fetch": "^2.5.7",
     "@types/url-join": "^4.0.0",
     "axios": "^0.21.1",
@@ -48,6 +47,7 @@
     "url-join": "^4.0.1"
   },
   "devDependencies": {
+    "@types/node": "^15.0.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1",
     "ts-node-dev": "^1.0.0-pre.52"
