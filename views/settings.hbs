@@ -1,7 +1,7 @@
 <div class="content">
   {{> header}}
   <div class="container" id="settings">
-    <h2>Settings</h2>
+    <h2>Paramètres</h2>
 
     {{> messages messages=messages className="global" }}
 
@@ -15,13 +15,13 @@
 
       {{#if (onlyNodes ui.nodes "password")}}
         <hr class="divider">
-        <p>Password</p>
+        <p>Mot de passe</p>
         {{> ui_nodes nodes=ui.nodes only="password" }}
       {{/if}}
 
       {{#if (onlyNodes ui.nodes "oidc")}}
         <hr class="divider">
-        <p>Social Sign In</p>
+        <p>Connexion via un réseau social</p>
         {{> ui_nodes nodes=ui.nodes only="oidc" }}
       {{/if}}
     </form>
