@@ -1,11 +1,11 @@
 <div class="auth">
     <div class="container" id="registration">
-        {{> icon_logo}}
-        <h2 class="subheading">Bienvenue à toi :)
-            <h5 class="subheading">
-                Pour continuer, il te suffit de remplir le formulaire ci-dessous :
-            </h5>
-        </h2>
+        <h1 class="subheading">Inscription
+            <img style="vertical-align:middle;" src="https://img.icons8.com/dusk/64/000000/edit-user-male.png"/>
+            <h2 class="subheading">
+                Veuillez remplir le formulaire :
+            </h2>
+        </h1>
 
         {{> messages messages=messages className="global"}}
 
@@ -16,7 +16,7 @@
         <hr class="divider">
 
         <div class="alternative-actions">
-            <a href="{{pathPrefix}}auth/login" style="margin: auto;">Déjà un compte ? Connexion</a>
+            <a href="{{pathPrefix}}auth/login" style="margin: auto;">Déjà un compte ?</a>
         </div>
     </div>
 </div>

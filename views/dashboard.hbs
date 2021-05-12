@@ -1,14 +1,23 @@
 <div class="content">
     <div class="container">
-        <h2 class="greeting" style="text-align: center">Connexion réussie
-            <img src="https://img.icons8.com/color/50/000000/checked-checkbox.png"/>
-        </h2>
+        <h1 class="greeting" style="text-align:center;">Vous êtes connecté
+            <img style="vertical-align: middle;" src="https://img.icons8.com/color/50/000000/checked-checkbox.png"/>
+        </h1>
+        
         <h3 style="text-align: center">
-            Bonjour <span class="user-identifier"> {{session.identity.traits.first}}</span> !
+            Bonjour <b><span class="user-identifier"> {{session.identity.traits.name.first}}</span></b> !
         </h3>
-        <h4 style="text-align: center">
-            Tu peux dès à présent accéder à tes notes.
-        </h4>
+
+        <div class="settings">
+            <a href="{{pathPrefix}}settings">
+                {{> button_settings}}
+            </a>
+        </div>
+        <div class="logout">
+            <a href="{{logoutUrl}}">
+                {{> button_sign_out}}
+            </a>
+        </div>
         
     </div>
 </div>
