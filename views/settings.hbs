@@ -1,7 +1,9 @@
 <div class="content">
-  {{> header}}
+  {{!-- {{> header}} --}}
   <div class="container" id="settings">
-    <h2>Settings</h2>
+    <h1>Paramètres
+      <img style="vertical-align:middle;" src="https://img.icons8.com/dusk/64/000000/settings-3.png"/>
+    </h1>
 
     {{> messages messages=messages className="global" }}
 
@@ -10,18 +12,18 @@
 
       {{> ui_nodes nodes=ui.nodes only="default" }}
 
-      <p>Profile</p>
+      <p>Profil</p>
       {{> ui_nodes nodes=ui.nodes only="profile" }}
 
       {{#if (onlyNodes ui.nodes "password")}}
         <hr class="divider">
-        <p>Password</p>
+        <p>Mot de passe</p>
         {{> ui_nodes nodes=ui.nodes only="password" }}
       {{/if}}
 
       {{#if (onlyNodes ui.nodes "oidc")}}
         <hr class="divider">
-        <p>Social Sign In</p>
+        <p>Connexion via un réseau social</p>
         {{> ui_nodes nodes=ui.nodes only="oidc" }}
       {{/if}}
     </form>

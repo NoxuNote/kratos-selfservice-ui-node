@@ -1,12 +1,12 @@
 <div class="content">
-    {{> header}}
+    {{!-- {{> header}} --}}
     <div class="container">
-        <h4>Verify your email address</h4>
+        <h2>Vérification de l'adresse email.</h2>
 
         {{> messages messages=messages className="global"}}
 
         {{#if (eq state "passed_challenge")}}
-            <p>Verification successful!</p>
+            <p>Succès de la vérification!</p>
         {{/if}}
 
         <div id="ui">

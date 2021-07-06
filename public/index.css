@@ -10,29 +10,30 @@
     --primary-light: #ECFDFE;
     --primary-half: #95E1F9;
     --primary-main: #3DACFC;
-    --primary-dark: #2E0473;
+    --primary-dark: #2a272e;
     --red-strong: #F44336;
     --green-strong: #43A047;
 }
 
 html, body {
-    min-height: 100vh;
+    max-height: 100vh;
     text-rendering: geometricPrecision;
+    overflow-x: hidden; /* Hide scrollbars x */
 }
 
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
-    color: var(--base-light);
-    background: var(--base-dark);
+    color: var(--base-dark);
+    background: var(--base-light);
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    width: 600px;
+    align-items: center;
     margin: 0 auto;
+    /* width: 600px; */
 }
 
 .auth .container {
@@ -41,13 +42,14 @@ body {
 
 .logo {
     pointer-events: none;
-    margin: 0 auto 2rem 0;
+    margin: 0 auto 1rem 0;
 }
 
 .content {
     font-style: normal;
     font-weight: normal;
     line-height: 160%;
+    text-align: center;
 }
 
 .content p {
@@ -57,7 +59,7 @@ body {
 }
 
 .content .header {
-    padding: 1.666rem 11.5rem;
+    padding: 1.666rem 5rem;
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
@@ -118,7 +120,7 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 160%;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 h4:first-child {
@@ -194,5 +196,11 @@ h4 ~ h5 {
 .divider {
     width: 100%;
     border-color: var(--base-main);
-    margin: 1.5rem 0;
+    margin: 1rem 0;
 }
+
+.img_center {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+  }

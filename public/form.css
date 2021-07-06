@@ -4,7 +4,7 @@ form {
     margin: 0.5rem 0;
 }
 
-form input, form button {
+form input, form button, button {
     outline: none;
 }
 
@@ -34,7 +34,7 @@ form label input:not(:placeholder-shown) ~ span {
     color: var(--base-text);
 }
 
-form button {
+form button, button {
     border-radius: 0.225em;
     background-color: var(--primary-main);
     color: var(--base-white);
@@ -45,20 +45,20 @@ form button {
     cursor: pointer;
 }
 
-form button[type="submit"] + fieldset {
+form button[type="submit"] + fieldset, button {
     margin-top: 1.5em;
 }
 
-form button:hover {
+form button:hover, button:hover {
     background-color: var(--primary-half);
     color: var(--primary-dark);
 }
 
 form label input {
     border-radius: 0.166em;
-    background-color: var(--base-black);
+    background-color: var(--base-dark);
     border-width: 0;
-    color: var(--base-white);
+    color: var(--base-light);
     padding: 0.875em 0.666em;
     font-size: inherit;
     line-height: 168%;
